@@ -6,18 +6,48 @@ import { useState } from "react";
 
 var genreDictionary = {
   action: [
-    { name: "Raazi", IMDB: "7.8/10" },
-    { name: "Ek Tha Tiger", IMDB: "5.5/10" }
+    {
+      name: "Raazi",
+      IMDB: "7.8/10",
+      description:
+        "A Kashmiri woman agrees to marry a Pakistani army officer in order to spy on Pakistan during the Indo-Pakistan War of 1971."
+    },
+    {
+      name: "Ek Tha Tiger",
+      IMDB: "5.5/10",
+      description:
+        "India's top spy Tiger and his love Zoya battle the dark world of intelligence and espionage that forbids its soldiers from loving the enemy. "
+    }
   ],
 
   Superhero: [
-    { name: "Spiderman", IMDB: "7.3/10" },
-    { name: "IronMan", IMDB: "7.9/10" }
+    {
+      name: "Spiderman",
+      IMDB: "7.3/10",
+      description:
+        "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."
+    },
+    {
+      name: "IronMan",
+      IMDB: "7.9/10",
+      description:
+        "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil."
+    }
   ],
 
   Drama: [
-    { name: "3 Idiots", IMDB: "8.4/10" },
-    { name: "Gangs of Wasseypur", IMDB: "8.2/10" }
+    {
+      name: "3 Idiots",
+      IMDB: "8.4/10",
+      description:
+        "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them `idiots`."
+    },
+    {
+      name: "Gangs of Wasseypur",
+      IMDB: "8.2/10",
+      description:
+        "A clash between Sultan and Shahid Khan leads to the expulsion of Khan from Wasseypur, and ignites a deadly blood feud spanning three generations."
+    }
   ]
 };
 
@@ -75,6 +105,10 @@ export default function App() {
                 >
                   <div style={{ fontSize: "larger" }}> {movie.name} </div>
                   <div style={{ fontSize: "smaller" }}> {movie.IMDB} </div>
+                  <div style={{ fontSize: "smaller" }}>
+                    {" "}
+                    {movie.description}{" "}
+                  </div>
                 </li>
               );
             })}
