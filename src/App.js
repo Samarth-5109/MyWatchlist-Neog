@@ -17,6 +17,12 @@ var genreDictionary = {
       IMDB: "5.5/10",
       description:
         "India's top spy Tiger and his love Zoya battle the dark world of intelligence and espionage that forbids its soldiers from loving the enemy. "
+    },
+    {
+      name: "John Wick",
+      IMDB: "7.4/10",
+      description:
+        "An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took everything from him "
     }
   ],
 
@@ -32,6 +38,12 @@ var genreDictionary = {
       IMDB: "7.9/10",
       description:
         "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil."
+    },
+    {
+      name: "The Avengers",
+      IMDB: "8.0/10",
+      description:
+        "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity."
     }
   ],
 
@@ -47,6 +59,12 @@ var genreDictionary = {
       IMDB: "8.2/10",
       description:
         "A clash between Sultan and Shahid Khan leads to the expulsion of Khan from Wasseypur, and ignites a deadly blood feud spanning three generations."
+    },
+    {
+      name: "Titanic",
+      IMDB: "7.8/10",
+      description:
+        "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
     }
   ]
 };
