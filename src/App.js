@@ -72,7 +72,7 @@ var genreDictionary = {
 var genrelist = Object.keys(genreDictionary);
 
 export default function App() {
-  var [movieDetails, setMovieDetails] = useState("");
+  var [movieDetails, setMovieDetails] = useState("action");
   function genreClickHandler(genre) {
     setMovieDetails(genre);
   }
@@ -106,30 +106,24 @@ export default function App() {
       </div>
       <div style={{ textAlign: "left" }}>
         <ul style={{ paddingInlineStart: "0" }}>
-          {genreDictionary[movieDetails] &&
-            genreDictionary[movieDetails].map((movie) => {
-              return (
-                <li
-                  key={movie}
-                  style={{
-                    listStyle: "none",
-                    padding: "1rem",
-                    border: "1px solid #D1D5DB",
-                    width: "70%",
-                    margin: "1rem 0rem",
-                    borderRadius: "0.5rem",
-                    backgroundColor: "white"
-                  }}
-                >
-                  <div style={{ fontSize: "larger" }}> {movie.name} </div>
-                  <div style={{ fontSize: "smaller" }}> {movie.IMDB} </div>
-                  <div style={{ fontSize: "smaller" }}>
-                    {" "}
-                    {movie.description}{" "}
-                  </div>
-                </li>
-              );
-            })}
+          {genreDictionary[movieDetails].map((movie) => (
+            <li
+              key={movie.name}
+              style={{
+                listStyle: "none",
+                padding: "1rem",
+                border: "1px solid #D1D5DB",
+                width: "70%",
+                margin: "1rem 0rem",
+                borderRadius: "0.5rem",
+                backgroundColor: "white"
+              }}
+            >
+              <div style={{ fontSize: "larger" }}> {movie.name} </div>
+              <div style={{ fontSize: "smaller" }}> {movie.IMDB} </div>
+              <div style={{ fontSize: "smaller" }}> {movie.description} </div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
